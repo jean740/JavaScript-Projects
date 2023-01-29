@@ -410,7 +410,7 @@ button {
 }
 
 /* Hover effect for contact and submit buttons */
-button:hover, .form-container, .btn:hover {
+button:hover, .form-container .btn:hover {
     color:rgb(28, 7, 136); /* This makes the text in the buttons white when hovered over */
     background-color: black; /* The background of the button changes to black when hovered over */
     transition-duration: 1s; /*This makes the transition last 1 second*/
@@ -427,14 +427,14 @@ button:hover, .form-container, .btn:hover {
 }
 
 /* Close button */
-.form-container, .cancel {
+.form-container .cancel {
     background-color: black;
     color: white;
     border-color: gray;
 }
 
 /* Styling for close button on hover */
-.form-container, .cancel:hover {
+.form-container .cancel:hover {
     color: white;
     background-color: darkred;
     transition-duration: 1s;
