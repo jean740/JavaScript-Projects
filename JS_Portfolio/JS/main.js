@@ -17,16 +17,16 @@ function plusSlides(n) {
 }
 
 //This functionchanges the slide whenthe dots are clicked
-function currentSlides(n) {
+function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
     var slides = document.getElementsByClassName("mySlides"); //This takes all elements with the class name "mySlides" and stores them in the variable array "slides"
     var dots = document.getElementsByClassName("dot"); // This takes all the elements with the class named "dot" and stores them in the variable array "dots"
-    if (n > slides.length) {slidesIndex = 1}; //If n (the nunber passed into the function) is greater than the lenght of the array "slides", the slideIndex is set to 1
+    if (n > slides.length) {slideIndex = 1}; //If n (the nunber passed into the function) is greater than the lenght of the array "slides", the slideIndex is set to 1
     if (n < 1) {slideIndex = slides.length}; //If n (the number passed into the function) is less than 1, the slideIndex is set to the lenght of the array "slides"
-    for (i = 0; i < slides.lenght; i++) {
+    for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none" //This for loop takes each item in the array "slides" and sets the display to none
     }
     for (i = 0; i < dots.length; i++) {
